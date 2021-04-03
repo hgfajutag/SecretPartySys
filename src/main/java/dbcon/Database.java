@@ -9,8 +9,8 @@ public class Database {
 	public Database() {
 		super();
 		this.url = "jdbc:mysql://localhost:3306/party_reservation_db";
-		this.user = "systemuser";
-		this.pass = "root";
+		this.user = "root";
+		this.pass = "1";
 		this.driver = "com.mysql.cj.jdbc.Driver";
 	}
 
