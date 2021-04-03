@@ -34,10 +34,9 @@ String driverName = "com.mysql.jdbc.Driver";
 
 String url = "jdbc:mysql://localhost:3306/party_reservation_db";
 
-String user = "systemuser";
+String user = "root";
 
-String dbpsw = "root";
-
+String dbpsw = "1";
 
 
 String sql = "select * from users where email=? and password=? and typeofusers=?";
@@ -91,10 +90,9 @@ out.println(userdbName+" "+userdbPsw+" "+dbUsertype);
 session.setAttribute("email",userdbName);
 session.setAttribute("typeofusers", dbUsertype); 
 if(dbUsertype.equals("HOST"))
-response.sendRedirect("Host.jsp"); 
+response.sendRedirect("RegisterPlace.html"); 
 else
 response.sendRedirect("Welcome.jsp"); 
-	
 } 
  
 

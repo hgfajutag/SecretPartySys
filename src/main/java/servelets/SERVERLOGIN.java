@@ -46,7 +46,7 @@ public class SERVERLOGIN extends HttpServlet {
 				request.setAttribute("typeuser", typeuser);
 				request.setAttribute("email", email);
 				
-				rd = request.getRequestDispatcher("index.jsp");
+				rd = request.getRequestDispatcher("login.jsp");
 			}
 			rd.forward(request, response);
 		}

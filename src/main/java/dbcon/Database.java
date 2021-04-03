@@ -11,7 +11,7 @@ public class Database {
 		this.url = "jdbc:mysql://localhost:3306/party_reservation_db";
 		this.user = "root";
 		this.pass = "1";
-		this.driver = "com.mysql.cj.jdbc.Driver";
+		this.driver = "com.mysql.jdbc.Driver";
 	}
 
 	public String getUrl() {
