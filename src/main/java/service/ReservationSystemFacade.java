@@ -21,6 +21,8 @@ public interface ReservationSystemFacade {
 	List<Location> findLocationsByCity(String city); // Location(s) of a city, e.g. Chicago has two major locations	
 	List<Place> findPlacesByLocationCode(String locationCode);
 	
+	List<Place> findPlace();
+		
 	List<PartyInstance> findPartysFromTo(String strLocationCode, LocalDate date);	
 	List<Reservation> findReservationsByGuestId(String guestId);
 	

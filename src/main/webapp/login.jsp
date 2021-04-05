@@ -90,7 +90,7 @@ out.println(userdbName+" "+userdbPsw+" "+dbUsertype);
 session.setAttribute("email",userdbName);
 session.setAttribute("typeofusers", dbUsertype); 
 if(dbUsertype.equals("HOST"))
-response.sendRedirect("RegisterPlace.html"); 
+response.sendRedirect("welcome-host.jsp"); 
 else
 response.sendRedirect("Welcome.jsp"); 
 } 

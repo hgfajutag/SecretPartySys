@@ -191,5 +191,18 @@ public class ReservationSystemFacadeImpl implements ReservationSystemFacade {
        
         return null;
     }
+
+	@Override
+	public List<Place> findPlace() {
+		List<Place> res = new ArrayList<Place>();
+		for (Location location : dataSource.getLocations()) {
+			//if (location.getCode().equalsIgnoreCase(locationCode)) {
+				List<Place> ltPlaces = location.getPlaces();
+				
+				res.addAll(ltPlaces);
+			//}
+		}
+		return res;
+	}
     
 }
