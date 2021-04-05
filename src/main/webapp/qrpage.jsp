@@ -89,10 +89,8 @@ ReservationSystemFacade dataSource = new ReservationSystemFacadeImpl();
 								%>
 								
 				<div class="col-md-12">
-				<form action="reserve.jsp" action="post">
-				<input type="hidden" name="party_name" value="<%out.println(rs.getString("party.id"));%>">
 					<button type="submit"
-						class="btn mt-4 btn-block p-2 btn-info shadowed">Print</button>
+						class="btn mt-4 btn-block p-2 btn-info shadowed" onclick="window.print()">Print this page</button>
 						</form>
 				</div>
 					<div class="col-md-12">
